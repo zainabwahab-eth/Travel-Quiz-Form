@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Travel Quiz</title>
+     <link rel="stylesheet" href="Style/styles.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1 id="title">Travel Quiz For Singles</h1>
+        <p id="description">This is a travel quiz for singles. We hope to use this to gather enough information  that will improve their travel experience</p>
+      </div>
+
+      <div class="form">
+        <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+
+          <fieldset>
+          <label id="name-label" for="name">Enter Full Name <input id="name" name="user-full-name" type="text" placeholder="Your full name" required /></label>
+          <label id="email-label" for="email">Enter Email Address <input id="email" name="user-email-address" type="email" placeholder="Your email address" required /></label>
+          <label id="number-label" for="number">Enter Age <input id="number" name="user-age" type="number" min="18" max="120" placeholder="Your age" required /></label>
+          </fieldset>
+
+          <fieldset>
+          <label for="dropdown">Choose The Country You Reside In <select id="dropdown" name="country">
+              <option value="">(select one)</option>
+            <option value="1">Trinidad and Tobago</option>
+            <option value="2">Germany</option>
+            <option value="3">Kenya</option>
+            <option value="4">Japan</option>
+            <option value="5">South Africa</option>
+            </select>
+          </label>   
+        </fieldset>
+
+        <fieldset>
+          <legend class="title">Choose Your Favorite Destination For Vacation</legend>
+          <label for="indonesia">
+            <input id="indonesia" type="radio" name="user-destination" value="indonesia" class="inline" checked />Indonesia
+          </label>
+          <label for="kenya">
+            <input id="kenya" type="radio" name="user-destination" value="kenya" class="inline" />Kenya
+          </label>
+          <label for="namibia">
+            <input id="namibia" type="radio" name="user-destination" value="namibia" class="inline" />Namibia
+          </label>
+          <label for="nigeria">
+            <input id="nigeria" type="radio" name="user-destination" value="nigeia" class="inline" />Nigeria
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose 2  Meals You Like The most</legend>
+          <label for="chinese-rice">
+            <input id="chinese-rice" type="checkbox" name="user-food" value="chinese-rice" class="inline" checked />Chinese Rice
+          </label>
+          <label for="fried-rice">
+            <input id="fried-rice" type="checkbox" name="user-food" value="fried-rice" class="inline" />fried Rice
+          </label>
+          <label for="jellof-rice">
+            <input id="jellof-rice" type="checkbox" name="user-food" value="jellof-rice" class="inline" />Jellof Rice
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="comments">
+            <textarea id="comments" rows="8" cols="30" placeholder="Additional comments" ></textarea>
+            </label>
+        </fieldset>
+        <label>
+          <input type="submit" id="submit" value="submit" />
+        </label>
+
+        </form>
+    </div>
+  </body>
+
+</html>
